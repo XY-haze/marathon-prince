@@ -1,4 +1,4 @@
-# Render pages/anchors of the site to PNG for visual QA.
+﻿# Render pages/anchors of the site to PNG for visual QA.
 # Uses $PSScriptRoot so it works regardless of how the path is encoded;
 # no non-ASCII literals here (Windows PowerShell 5.1 reads .ps1 as ANSI).
 $chrome = "C:\Program Files\Google\Chrome\Application\chrome.exe"

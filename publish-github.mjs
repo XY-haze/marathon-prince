@@ -54,6 +54,7 @@ const git = (args, opts = {}) => {
   return r;
 };
 const gitOut = (args) => (git(args).stdout || "").trim();
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 /* ---------------------------------------------------------------- 1. 取 token */
 
@@ -63,12 +64,36 @@ async function resolveToken() {
     info("使用环境变量中的 token");
     return fromEnv.trim();
   }
-  info("环境变量里没有 token，尝试从本机 Git 凭据管理器获取…");
+
+  const tokenFile = join(ROOT, ".gh-token");
+  if (existsSync(tokenFile)) {
+    const t = readFileSync(tokenFile, "utf8").trim();
+    if (t) {
+      info("使用 .gh-token 文件中的 token（该文件已在 .gitignore 中排除）");
+      return t;
+    }
+  }
+
+  if (DRY) {
+    info("--dry-run：跳过凭据获取（不会弹授权窗口）");
+    return null;
+  }
+
+  info("没有环境变量 / .gh-token 文件，尝试从本机 Git 凭据管理器获取…");
+  console.log("");
+  console.log("    ┌──────────────────────────────────────────────────────────┐");
+  console.log("    │  请留意屏幕上弹出的 GitHub 登录 / 授权窗口               │");
+  console.log("    │  （Git Credential Manager）。点 “Sign in with your       │");
+  console.log("    │   browser”，在浏览器里点 Authorize 同意授权即可。        │");
+  console.log("    │  若弹出的是一个设备码，请到 https://github.com/login/device 输入。 │");
+  console.log("    │  脚本最多等待 10 分钟。                                   │");
+  console.log("    └──────────────────────────────────────────────────────────┘");
+  console.log("");
   const r = spawnSync("git", ["credential", "fill"], {
     input: "protocol=https\nhost=github.com\n\n",
     encoding: "utf8",
     env: { ...process.env, GIT_TERMINAL_PROMPT: "0", GCM_INTERACTIVE: "Auto" },
-    timeout: 180000,
+    timeout: 600000,
   });
   const token = (r.stdout || "").match(/^password=(.+)$/m)?.[1];
   if (token) {
@@ -215,12 +240,25 @@ if (!NO_API) {
 if (!remote) die("没有配置 origin 远程仓库", "用 --repo <已存在的仓库名> 重跑，或先 git remote add origin <地址>");
 ok(`origin = ${remote}`);
 
-const push = git(["push", "-u", "origin", "HEAD:main"], { env: { ...process.env, GIT_TERMINAL_PROMPT: "0" } });
-if (push.status !== 0) {
-  console.error(push.stderr);
-  die("推送失败", "确认 SSH 密钥已加到 GitHub 账号（ssh -T git@github.com 应显示 Hi <用户名>!）");
+/* 本机到 GitHub 的国际链路有间歇性丢包，push 失败多半是网络抖动，重试即可 */
+let pushed = false;
+for (let attempt = 1; attempt <= 3 && !pushed; attempt++) {
+  const push = git(["push", "-u", "origin", "HEAD:main"], { env: { ...process.env, GIT_TERMINAL_PROMPT: "0" } });
+  if (push.status === 0) {
+    pushed = true;
+    ok(`推送完成（第 ${attempt} 次尝试）`);
+    break;
+  }
+  const err = (push.stderr || "").trim().split("\n").slice(-3).join(" | ");
+  if (attempt < 3) {
+    info(`第 ${attempt} 次推送失败：${err}`);
+    info("8 秒后自动重试…（本机到 GitHub 存在间歇性丢包，可先跑 node doctor.mjs 体检）");
+    await sleep(8000);
+  } else {
+    console.error(push.stderr);
+    die("推送失败（已重试 3 次）", "先运行 node doctor.mjs 看链路;或改用手机热点/代理后再跑本脚本");
+  }
 }
-ok("推送完成");
 
 /* ------------------------------------------------------------------ 等部署 */
 
@@ -235,7 +273,7 @@ if (!token) {
   process.exit(0);
 }
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const sleepAlreadyDefined = true; // sleep 已在文件顶部定义
 let run = null;
 for (let i = 0; i < 20 && !run; i++) {
   await sleep(6000);
