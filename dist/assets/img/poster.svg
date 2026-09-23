@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="马拉松王子海报：马拉松之环与圣火"><defs>
+      <linearGradient id="pbg" x1="0" y1="0" x2="0.4" y2="1">
+        <stop offset="0" stop-color="#09253f"/>
+        <stop offset="0.5" stop-color="#0a2d4f"/>
+        <stop offset="1" stop-color="#12456f"/>
+      </linearGradient>
+      <radialGradient id="pglow" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#ffc94d" stop-opacity=".8"/>
+        <stop offset="1" stop-color="#ff9f43" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="pring" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffc94d"/><stop offset="1" stop-color="#ef5f18"/>
+      </linearGradient>
+      <linearGradient id="pflame" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="#ef5f18"/><stop offset="1" stop-color="#ffe9b0"/>
+      </linearGradient>
+    </defs>
+
+    <rect width="600" height="800" fill="url(#pbg)"/>
+    <circle cx="300" cy="316" r="248" fill="url(#pglow)"/>
+    <circle cx="300" cy="316" r="182" fill="none" stroke="url(#pring)" stroke-width="6" stroke-dasharray="18 14" opacity=".92"/>
+    <circle cx="300" cy="316" r="150" fill="none" stroke="#2ea3d8" stroke-width="2" opacity=".5"/>
+    <circle cx="300" cy="316" r="204" fill="none" stroke="#7fd0ef" stroke-width="1.4" opacity=".3"/>
+
+    <g transform="translate(300 372) scale(1.9)">
+      <path d="M0 0 C -18 -16 -13 -34 0 -52 C 13 -34 18 -16 0 0 Z" fill="url(#pflame)"/>
+      <path d="M0 -6 C -9 -16 -7 -26 0 -36 C 7 -26 9 -16 0 -6 Z" fill="#fff6dd" opacity=".95"/>
+    </g>
+
+    <path d="M-20 700 C 150 660 330 686 470 640 C 540 618 590 604 640 596"
+      fill="none" stroke="#0b3357" stroke-width="52" stroke-linecap="round"/>
+    <path d="M-20 700 C 150 660 330 686 470 640 C 540 618 590 604 640 596"
+      fill="none" stroke="#ffe9b0" stroke-width="3" stroke-dasharray="14 20" opacity=".7" class="track-dash"/>
+
+    <g class="runner" transform="translate(400 664) scale(1.25)" opacity="0.95"
+      fill="none" stroke="#eaf6ff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="3" cy="-39" r="7" fill="#eaf6ff" stroke="none"/>
+    <path d="M0 -30 L3 -10"/>
+    <path d="M1 -27 L14 -32 L22 -23"/>
+    <path d="M1 -26 L-12 -21 L-19 -11"/>
+    <path d="M3 -10 L15 -3 L12 9"/>
+    <path d="M3 -10 L-9 -1 L-6 8"/>
+  </g>
+
+    <text x="300" y="510" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Source Han Sans SC, sans-serif"
+      font-size="72" font-weight="800" fill="#ffffff" letter-spacing="8">马拉松王子</text>
+    <text x="300" y="556" text-anchor="middle" font-family="Bahnschrift, Segoe UI, sans-serif"
+      font-size="19" font-weight="700" fill="#ffc94d" letter-spacing="9">PRINCE MARATHON</text>
+    <text x="300" y="600" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif"
+      font-size="17" fill="#9fd8f2" letter-spacing="3">2011 · 全 52 集 · 中国厦门</text></svg>

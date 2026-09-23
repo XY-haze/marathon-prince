@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" width="88" height="88" role="img" aria-label="萨角色徽章"><defs>
+      <linearGradient id="avg-saqima" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ef5f18"/><stop offset="1" stop-color="#ffc94d"/>
+      </linearGradient>
+    </defs>
+    <rect width="160" height="160" rx="34" fill="url(#avg-saqima)"/>
+    <g transform="translate(80 128) scale(1.15)" opacity=".6">
+        <path d="M0 0 C -18 -16 -13 -34 0 -52 C 13 -34 18 -16 0 0 Z" fill="#fff3d0"/>
+      </g>
+    <text x="80" y="84" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, Source Han Sans SC, sans-serif"
+      font-size="62" font-weight="800" fill="#ffffff" opacity=".95">萨</text>
+    <rect x="0" y="0" width="160" height="160" rx="34" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="2"/></svg>

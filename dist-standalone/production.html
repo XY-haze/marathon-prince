@@ -1,0 +1,1828 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>幕后制作 | 马拉松王子 · 资料站</title>
+<meta name="description" content="《马拉松王子》幕后制作：总导演曹小卉、编剧兼执行导演刘可欣、美术设计白婕的履历，完整制作人员表、出品与制作公司、2008—2011 制作与播出时间线，以及 2D TV 系列的制作规格。">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="幕后制作 | 马拉松王子 · 资料站">
+<meta property="og:description" content="《马拉松王子》幕后制作：总导演曹小卉、编剧兼执行导演刘可欣、美术设计白婕的履历，完整制作人员表、出品与制作公司、2008—2011 制作与播出时间线，以及 2D TV 系列的制作规格。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiA+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzBhMmQ0ZiIvPgogICAgIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjEyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmM5NGQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iMy41IDMiLz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNiAyNCkgc2NhbGUoLjM0KSI+CiAgICAgICA8cGF0aCBkPSJNMCAwIEMgLTE4IC0xNiAtMTMgLTM0IDAgLTUyIEMgMTMgLTM0IDE4IC0xNiAwIDAgWiIgZmlsbD0iI2ZmOWY0MyIvPgogICAgICAgPHBhdGggZD0iTTAgLTYgQyAtOSAtMTYgLTcgLTI2IDAgLTM2IEMgNyAtMjYgOSAtMTYgMCAtNiBaIiBmaWxsPSIjZmZlOWIwIi8+CiAgICAgPC9nPjwvc3ZnPg==" type="image/svg+xml">
+<style>
+/* ==========================================================================
+   《马拉松王子》资料站 — 视觉系统
+   配色取自：厦门海滨（海蓝）、马拉松圣火（橙金）、修罗（紫）、龙族（朱红）
+   ========================================================================== */
+
+:root {
+  --sea-900: #061c33;
+  --sea-850: #08243f;
+  --sea-800: #0a2d4f;
+  --sea-700: #10406e;
+  --sea-600: #1a5c96;
+  --cy-500: #2ea3d8;
+  --cy-300: #7fd0ef;
+  --cy-100: #dff2fb;
+
+  --flame-600: #ef5f18;
+  --flame-500: #ff7a2f;
+  --flame-400: #ff9f43;
+  --gold-500: #ffc94d;
+  --gold-200: #ffe9b0;
+
+  --shura-500: #7b4bd1;
+  --shura-200: #e3d8fb;
+  --dragon-500: #e0453e;
+
+  --paper: #f7f4ee;
+  --paper-2: #fffdf9;
+  --ink: #15202b;
+  --ink-2: #3b4a59;
+  --muted: #6d7c8c;
+  --line: rgba(10, 45, 79, 0.14);
+  --line-soft: rgba(10, 45, 79, 0.08);
+
+  --shadow-sm: 0 1px 2px rgba(6, 28, 51, 0.06), 0 4px 12px rgba(6, 28, 51, 0.06);
+  --shadow-md: 0 2px 6px rgba(6, 28, 51, 0.08), 0 18px 40px -18px rgba(6, 28, 51, 0.28);
+  --shadow-lg: 0 30px 70px -30px rgba(6, 28, 51, 0.45);
+
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-full: 999px;
+
+  --wrap: 1120px;
+  --nav-h: 62px;
+
+  --font-sans: "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei UI", "Microsoft YaHei",
+    "Hiragino Sans GB", "Source Han Sans SC", "Noto Sans CJK SC", system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  --font-num: "DIN Alternate", "Bahnschrift", "Segoe UI Variable Display", ui-rounded,
+    var(--font-sans);
+  --font-serif: "Songti SC", "SimSun", Georgia, "Times New Roman", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 16px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--paper);
+  background-image: radial-gradient(1200px 500px at 80% -200px, rgba(46, 163, 216, 0.14), transparent 70%),
+    radial-gradient(900px 400px at 0% 0%, rgba(255, 122, 47, 0.09), transparent 65%);
+  background-repeat: no-repeat;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--sea-600);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26, 92, 150, 0.28);
+  transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+}
+
+a:hover {
+  color: var(--flame-600);
+  border-bottom-color: rgba(239, 95, 24, 0.5);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--cy-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin: 0 0 0.5em;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+ul,
+ol {
+  padding-left: 1.35em;
+}
+
+li {
+  margin: 0.25em 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2.5rem 0;
+}
+
+::selection {
+  background: var(--gold-200);
+  color: var(--sea-900);
+}
+
+/* ---------------------------------------------------------------- 布局 */
+
+.wrap {
+  width: min(100% - 2.5rem, var(--wrap));
+  margin-inline: auto;
+}
+
+.wrap--narrow {
+  width: min(100% - 2.5rem, 820px);
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: var(--sea-800);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 0 0 var(--r-sm) 0;
+  border: 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* ---------------------------------------------------------------- 顶部导航 */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  background: rgba(6, 28, 51, 0.9);
+  backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: min(100% - 2.5rem, var(--wrap));
+  margin-inline: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  border: 0;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  color: var(--gold-500);
+}
+
+.brand__mark {
+  width: 30px;
+  height: 30px;
+  flex: none;
+}
+
+.brand__text {
+  font-size: 1.02rem;
+}
+
+.brand__sub {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--cy-300);
+  display: block;
+  line-height: 1;
+}
+
+.nav__links {
+  display: flex;
+  gap: 0.15rem;
+  margin-left: auto;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.nav__links::-webkit-scrollbar {
+  display: none;
+}
+
+.nav__links a {
+  color: rgba(255, 255, 255, 0.78);
+  border: 0;
+  padding: 0.45rem 0.72rem;
+  border-radius: var(--r-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav__links a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.nav__links a[aria-current="page"] {
+  color: var(--sea-900);
+  background: linear-gradient(135deg, var(--gold-500), var(--flame-400));
+}
+
+/* ---------------------------------------------------------------- 首屏 */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(180deg, var(--sea-900) 0%, var(--sea-800) 52%, var(--sea-700) 100%);
+  padding: clamp(3rem, 8vw, 5.5rem) 0 clamp(3rem, 7vw, 5rem);
+  isolation: isolate;
+}
+
+.hero__art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.95;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(6, 28, 51, 0.9) 0%, rgba(6, 28, 51, 0.6) 40%, rgba(6, 28, 51, 0.12) 100%),
+    linear-gradient(180deg, rgba(6, 28, 51, 0.45) 0%, rgba(6, 28, 51, 0) 35%, rgba(6, 28, 51, 0.62) 100%);
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.hero__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold-500);
+  border: 1px solid rgba(255, 201, 77, 0.42);
+  border-radius: var(--r-full);
+  padding: 0.3rem 0.85rem;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: clamp(2.6rem, 7vw, 4.4rem);
+  line-height: 1.05;
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.04em;
+  background: linear-gradient(100deg, #fff 8%, var(--gold-200) 42%, var(--flame-400) 78%, var(--gold-500) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero__en {
+  font-family: var(--font-num);
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  letter-spacing: 0.42em;
+  color: var(--cy-300);
+  margin: 0 0 1.1rem;
+  font-weight: 600;
+}
+
+.hero__lead {
+  font-size: clamp(1rem, 2vw, 1.12rem);
+  color: rgba(255, 255, 255, 0.86);
+  max-width: 46ch;
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: var(--r-full);
+  font-weight: 700;
+  font-size: 0.94rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--flame-500), var(--gold-500));
+  color: #36150a;
+  border: 0;
+  box-shadow: 0 12px 30px -12px rgba(255, 138, 47, 0.9);
+}
+
+.btn--primary:hover {
+  color: #36150a;
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.32);
+  color: #fff;
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__chips li {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 0.22rem 0.7rem;
+  border-radius: var(--r-full);
+  letter-spacing: 0.04em;
+}
+
+/* 首屏右侧海报卡 */
+
+.poster {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(170deg, var(--sea-700), var(--sea-900));
+  aspect-ratio: 3 / 4;
+  max-width: 360px;
+  margin-inline: auto;
+}
+
+.poster svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.poster__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2.5rem 1.1rem 0.9rem;
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(transparent, rgba(6, 28, 51, 0.92));
+}
+
+/* ---------------------------------------------------------------- 数据带 */
+
+.statband {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border-block: 1px solid var(--line);
+}
+
+.statband__item {
+  background: var(--paper-2);
+  padding: 1.4rem clamp(0.9rem, 2vw, 1.6rem);
+  text-align: center;
+}
+
+.statband__num {
+  font-family: var(--font-num);
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  font-weight: 800;
+  color: var(--sea-700);
+  line-height: 1.1;
+  display: block;
+  white-space: nowrap;
+}
+
+.statband__num--date {
+  font-size: clamp(1.2rem, 2.7vw, 1.7rem);
+  letter-spacing: 0.01em;
+  padding-top: 0.22rem;
+}
+
+.statband__num small {
+  font-size: 0.5em;
+  font-weight: 700;
+  color: var(--flame-600);
+  margin-left: 0.15em;
+}
+
+.statband__label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+/* ---------------------------------------------------------------- 通用区块 */
+
+.section {
+  padding: clamp(2.6rem, 6vw, 4.2rem) 0;
+}
+
+.section--tint {
+  background: linear-gradient(180deg, rgba(46, 163, 216, 0.07), rgba(46, 163, 216, 0));
+}
+
+.section--dark {
+  background: linear-gradient(180deg, var(--sea-900), var(--sea-800));
+  color: #fff;
+}
+
+.section--dark .section__lead,
+.section--dark p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.section__hd {
+  margin-bottom: clamp(1.4rem, 3vw, 2.2rem);
+  max-width: 72ch;
+}
+
+.kicker {
+  display: block;
+  font-family: var(--font-num);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.26em;
+  color: var(--flame-600);
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.section--dark .kicker {
+  color: var(--gold-500);
+}
+
+.section__title {
+  font-size: clamp(1.5rem, 3.4vw, 2.15rem);
+  margin-bottom: 0.4rem;
+}
+
+.section__title .accent {
+  background: linear-gradient(transparent 62%, var(--gold-200) 62%);
+  padding: 0 0.1em;
+}
+
+.section--dark .section__title .accent {
+  background: linear-gradient(transparent 62%, rgba(255, 201, 77, 0.35) 62%);
+}
+
+.section__lead {
+  color: var(--ink-2);
+  font-size: 1.02rem;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------- 卡片与网格 */
+
+.grid {
+  display: grid;
+  gap: clamp(0.9rem, 2vw, 1.35rem);
+}
+
+.grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+}
+
+.grid--4 {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.card {
+  background: var(--paper-2);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-md);
+  padding: clamp(1.05rem, 2.4vw, 1.5rem);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.card--hover {
+  transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+}
+
+.card--hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(46, 163, 216, 0.4);
+}
+
+.card--rail::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--cy-500), var(--flame-500));
+}
+
+.card__title {
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.card__meta {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.card--dark {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  box-shadow: none;
+}
+
+.card--dark .card__meta {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------------------------------------------------- 徽标/标签 */
+
+.tag {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.16rem 0.55rem;
+  border-radius: var(--r-full);
+  background: var(--cy-100);
+  color: var(--sea-700);
+  border: 1px solid rgba(46, 163, 216, 0.3);
+  margin: 0 0.25rem 0.25rem 0;
+}
+
+.tag--flame {
+  background: rgba(255, 122, 47, 0.13);
+  color: var(--flame-600);
+  border-color: rgba(255, 122, 47, 0.34);
+}
+
+.tag--shura {
+  background: var(--shura-200);
+  color: #4a2691;
+  border-color: rgba(123, 75, 209, 0.32);
+}
+
+.tag--dragon {
+  background: rgba(224, 69, 62, 0.12);
+  color: #a52620;
+  border-color: rgba(224, 69, 62, 0.3);
+}
+
+.tag--plain {
+  background: rgba(10, 45, 79, 0.06);
+  color: var(--ink-2);
+  border-color: var(--line);
+}
+
+/* ---------------------------------------------------------------- 角色卡 */
+
+.char {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: 88px minmax(0, 1fr);
+  align-items: start;
+}
+
+.char__avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 24px;
+  overflow: hidden;
+  flex: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.char__name {
+  font-size: 1.25rem;
+  margin: 0 0 0.1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.char__alias {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.char__role {
+  font-size: 0.85rem;
+  color: var(--flame-600);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.char__desc {
+  font-size: 0.94rem;
+  color: var(--ink-2);
+  margin: 0.5rem 0 0;
+}
+
+.char__facts {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  margin-top: 0.6rem;
+}
+
+.char__facts th,
+.char__facts td {
+  text-align: left;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed var(--line);
+  vertical-align: top;
+}
+
+.char__facts th {
+  color: var(--muted);
+  font-weight: 600;
+  width: 5.2em;
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------- 定义列表/信息表 */
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+  background: var(--paper-2);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.tbl caption {
+  text-align: left;
+  font-size: 0.84rem;
+  color: var(--muted);
+  padding: 0.5rem 0.2rem;
+  caption-side: bottom;
+}
+
+.tbl th,
+.tbl td {
+  padding: 0.72rem 0.95rem;
+  border-bottom: 1px solid var(--line-soft);
+  text-align: left;
+  vertical-align: top;
+}
+
+.tbl thead th {
+  background: linear-gradient(180deg, var(--sea-800), var(--sea-700));
+  color: #fff;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  border-bottom: 0;
+  white-space: nowrap;
+}
+
+.tbl tbody tr:nth-child(even) {
+  background: rgba(46, 163, 216, 0.04);
+}
+
+.tbl tbody tr:hover {
+  background: rgba(255, 201, 77, 0.12);
+}
+
+.tbl th[scope="row"] {
+  color: var(--sea-700);
+  font-weight: 700;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.tbl--kv th[scope="row"] {
+  width: 8.5em;
+}
+
+.tbl-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---------------------------------------------------------------- 时间线 */
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.6rem;
+  border-left: 2px solid rgba(46, 163, 216, 0.35);
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 1.4rem 0.2rem;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.6rem - 7px);
+  top: 0.55rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--cy-500);
+}
+
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__time {
+  display: block;
+  font-family: var(--font-num);
+  font-weight: 800;
+  color: var(--flame-600);
+  letter-spacing: 0.06em;
+  font-size: 0.92rem;
+}
+
+.timeline__body {
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+
+/* ---------------------------------------------------------------- 分集目录 */
+
+.ep-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 1.1rem;
+}
+
+.ep-search {
+  flex: 1 1 240px;
+  min-width: 200px;
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.6rem 0.95rem;
+  border-radius: var(--r-full);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  color: var(--ink);
+}
+
+.ep-search::placeholder {
+  color: #9aa8b6;
+}
+
+.ep-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.chipbtn {
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--r-full);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.chipbtn:hover {
+  border-color: rgba(46, 163, 216, 0.5);
+  color: var(--sea-700);
+}
+
+.chipbtn[aria-pressed="true"] {
+  background: linear-gradient(135deg, var(--sea-700), var(--cy-500));
+  color: #fff;
+  border-color: transparent;
+}
+
+.ep-count {
+  font-size: 0.84rem;
+  color: var(--muted);
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.ep-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+  gap: 0.5rem;
+}
+
+.ep {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: baseline;
+  background: var(--paper-2);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-sm);
+  padding: 0.62rem 0.85rem;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.2s ease;
+  scroll-margin-top: calc(var(--nav-h) + 20px);
+}
+
+.ep:hover {
+  border-color: rgba(46, 163, 216, 0.45);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.ep:target {
+  border-color: var(--flame-500);
+  box-shadow: 0 0 0 3px rgba(255, 122, 47, 0.18);
+}
+
+.ep__no {
+  font-family: var(--font-num);
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, var(--sea-700), var(--sea-600));
+  border-radius: 7px;
+  padding: 0.1rem 0.42rem;
+  min-width: 2.1em;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.ep__title {
+  font-weight: 700;
+  font-size: 0.96rem;
+  color: var(--ink);
+}
+
+.ep__note {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--flame-600);
+}
+
+.ep.is-hidden {
+  display: none;
+}
+
+.ep-empty {
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding: 1rem 0;
+}
+
+/* ---------------------------------------------------------------- 引用/提示 */
+
+.callout {
+  border-left: 4px solid var(--cy-500);
+  background: linear-gradient(90deg, rgba(46, 163, 216, 0.1), rgba(46, 163, 216, 0.02));
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  padding: 1rem 1.2rem;
+  font-size: 0.94rem;
+  color: var(--ink-2);
+}
+
+.callout--flame {
+  border-left-color: var(--flame-500);
+  background: linear-gradient(90deg, rgba(255, 122, 47, 0.12), rgba(255, 122, 47, 0.02));
+}
+
+.callout--shura {
+  border-left-color: var(--shura-500);
+  background: linear-gradient(90deg, rgba(123, 75, 209, 0.12), rgba(123, 75, 209, 0.02));
+}
+
+.callout__title {
+  display: block;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+
+.callout p:last-child,
+.callout ul:last-child {
+  margin-bottom: 0;
+}
+
+blockquote.quote {
+  margin: 0;
+  padding: 1rem 1.3rem;
+  background: var(--paper-2);
+  border-radius: var(--r-md);
+  border: 1px solid var(--line-soft);
+  border-left: 4px solid var(--gold-500);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--ink-2);
+  box-shadow: var(--shadow-sm);
+}
+
+blockquote.quote cite {
+  display: block;
+  margin-top: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-style: normal;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- 歌词 */
+
+.lyrics {
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--ink-2);
+  white-space: pre-line;
+  font-family: var(--font-serif);
+  background: linear-gradient(180deg, rgba(255, 201, 77, 0.12), rgba(255, 201, 77, 0.03));
+  border: 1px dashed rgba(239, 95, 24, 0.35);
+  border-radius: var(--r-md);
+  padding: 1.1rem 1.3rem;
+  max-height: 22rem;
+  overflow: auto;
+}
+
+details.disclosure {
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-md);
+  background: var(--paper-2);
+  padding: 0.25rem 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+details.disclosure summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.7rem 0;
+  color: var(--sea-700);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+details.disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+details.disclosure summary::before {
+  content: "▸";
+  color: var(--flame-500);
+  font-size: 0.9em;
+  transition: transform 0.2s ease;
+}
+
+details.disclosure[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details.disclosure > *:not(summary) {
+  animation: fade-in 0.28s ease both;
+}
+
+/* ---------------------------------------------------------------- 来源 */
+
+.src-list {
+  counter-reset: src;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.src-list li {
+  counter-increment: src;
+  position: relative;
+  padding: 0.75rem 0.9rem 0.75rem 3.2rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-sm);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.src-list li::before {
+  content: counter(src);
+  position: absolute;
+  left: 0.75rem;
+  top: 0.72rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-num);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, var(--sea-700), var(--cy-500));
+  border-radius: 8px;
+}
+
+.src-list .src-list__note {
+  display: block;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+/* ---------------------------------------------------------------- 目录/锚点导航 */
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  margin: 0 0 2rem;
+  list-style: none;
+}
+
+.toc a {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--r-full);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  color: var(--ink-2);
+}
+
+.toc a:hover {
+  border-color: var(--flame-400);
+  color: var(--flame-600);
+  background: rgba(255, 201, 77, 0.14);
+}
+
+/* ---------------------------------------------------------------- 页脚 */
+
+.footer {
+  background: var(--sea-900);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 2.6rem 0 2rem;
+  font-size: 0.88rem;
+  margin-top: 1rem;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.86);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer a:hover {
+  color: var(--gold-500);
+  border-bottom-color: rgba(255, 201, 77, 0.6);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1.1rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  justify-content: space-between;
+}
+
+/* ---------------------------------------------------------------- 页头（子页） */
+
+.pagehead {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(160deg, var(--sea-900), var(--sea-700));
+  padding: clamp(2.2rem, 6vw, 3.4rem) 0 clamp(1.8rem, 4vw, 2.6rem);
+  overflow: hidden;
+}
+
+.pagehead::before {
+  content: "";
+  position: absolute;
+  right: -8%;
+  top: -60%;
+  width: 60%;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(255, 201, 77, 0.28), transparent 62%);
+  pointer-events: none;
+}
+
+.pagehead__crumb {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--cy-300);
+  margin-bottom: 0.5rem;
+}
+
+.pagehead__crumb a {
+  color: rgba(255, 255, 255, 0.75);
+  border: 0;
+}
+
+.pagehead h1 {
+  font-size: clamp(1.8rem, 4.6vw, 2.7rem);
+  margin-bottom: 0.5rem;
+}
+
+.pagehead p {
+  max-width: 62ch;
+  color: rgba(255, 255, 255, 0.84);
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------- 动画 */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes dash-move {
+  to {
+    stroke-dashoffset: -240;
+  }
+}
+
+@keyframes gull-drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-14px, -7px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes runner-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes flame-flicker {
+  0%,
+  100% {
+    opacity: 0.92;
+    transform: scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1.06);
+  }
+}
+
+.hero__art .track-dash {
+  animation: dash-move 9s linear infinite;
+}
+
+.hero__art .gull {
+  animation: gull-drift 8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.hero__art .runner {
+  animation: runner-bob 1.1s ease-in-out infinite;
+}
+
+.hero__art .flame {
+  animation: flame-flicker 2.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: bottom center;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------------------------------------------------------------- 响应式 */
+
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .poster {
+    max-width: 300px;
+  }
+
+  .hero::after {
+    background: linear-gradient(180deg, rgba(6, 28, 51, 0.82) 0%, rgba(6, 28, 51, 0.62) 55%, rgba(6, 28, 51, 0.88) 100%);
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 15.5px;
+  }
+
+  .nav__inner {
+    gap: 0.5rem;
+  }
+
+  .brand__sub {
+    display: none;
+  }
+
+  .brand__text {
+    font-size: 0.94rem;
+  }
+
+  .char {
+    grid-template-columns: 1fr;
+  }
+
+  .char__avatar {
+    width: 72px;
+    height: 72px;
+  }
+
+  .ep-count {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .tbl th,
+  .tbl td {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* ---------------------------------------------------------------- 打印 */
+
+@media print {
+  .nav,
+  .hero__cta,
+  .ep-toolbar,
+  .footer {
+    display: none;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .card,
+  .tbl,
+  .quote {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  a {
+    border: 0;
+    color: #000;
+  }
+}
+
+</style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body data-page="production.html">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" width="30" height="30" role="img" aria-label="马拉松王子标识"><defs>
+       <linearGradient id="lgFlame" x1="0" y1="1" x2="0" y2="0">
+         <stop offset="0" stop-color="#ef5f18"/><stop offset="1" stop-color="#ffc94d"/>
+       </linearGradient>
+     </defs>
+     <circle cx="32" cy="32" r="28" fill="none" stroke="#ffc94d" stroke-width="3.4" stroke-dasharray="7 6" opacity=".95"/>
+     <circle cx="32" cy="32" r="21" fill="none" stroke="#2ea3d8" stroke-width="1.6" opacity=".65"/>
+     <g transform="translate(32 45) scale(.62)">
+       <path d="M0 0 C -18 -16 -13 -34 0 -52 C 13 -34 18 -16 0 0 Z" fill="url(#lgFlame)"/>
+       <path d="M0 -6 C -9 -16 -7 -26 0 -36 C 7 -26 9 -16 0 -6 Z" fill="#fff3d0" opacity=".92"/>
+     </g></svg></span>
+      <span class="brand__text">马拉松王子
+        <span class="brand__sub">PRINCE MARATHON</span>
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="站点导航">
+        <a href="index.html">首页</a>
+        <a href="plot.html">剧情与世界观</a>
+        <a href="characters.html">角色</a>
+        <a href="episodes.html">全52集</a>
+        <a href="production.html">幕后制作</a>
+        <a href="music.html">音乐</a>
+        <a href="broadcast.html">播出与评价</a>
+        <a href="sources.html">资料来源</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="pagehead">
+  <div class="wrap">
+    <p class="pagehead__crumb"><a href="index.html">首页</a> / 幕后制作</p>
+    <h1>幕后制作</h1>
+    <p>《马拉松王子》的幕后阵容并不“儿童向”：总导演曹小卉是北京电影学院副院长、曾执导奥运动画《福娃》的动画界前辈，编剧兼执行导演刘可欣后来执导了《摩尔庄园冰世纪》。这一页整理全部可查的主创名单与制作时间线。</p>
+  </div>
+</div>
+<section class="section">
+  <div class="wrap">
+  <div class="section__hd reveal">
+    <span class="kicker">Key creators</span>
+    <h2 class="section__title">三位核心主创</h2>
+  </div>
+<div class="grid grid--3">
+  <article class="card card--rail card--hover reveal">
+    <h3 class="card__title">曹小卉 · 总导演</h3>
+    <p style="font-size:.94rem;color:var(--ink-2)">中国电影家协会会员、中国动画学会常务理事、中国电视艺术家协会卡通艺术委员会常务理事、北京美术家协会会员，中央美术学院城市设计学院客座教授、清华大学继续教育学院顾问；多次担任中国电视“金鹰奖”、中国电影“华表奖”及国内各动漫节评委。曾导演《七色花》《三只小狐狸》《猫咪小贝》（三次获中国电影“华表奖”、第 29 届德黑兰国际教育电影节金奖）、《小贝流浪记》（获中国电视“金鹰奖”“金童奖”）与 2008 年《奥运福娃历险记》。</p>
+  </article>
+  <article class="card card--rail card--hover reveal">
+    <h3 class="card__title">刘可欣 · 编剧 / 执行导演</h3>
+    <p style="font-size:.94rem;color:var(--ink-2)">作者导演、儿童文学创作者，北京电影学院文学系剧本创作专业毕业，师从导师黄丹；曾任北京电视台国际部编导、中央电视台纪录片导演。参与创作《阳光客栈》《新上海滩》《大象》等多部影视剧作品，是《摩尔庄园冰世纪》的作者兼导演。</p>
+  </article>
+  <article class="card card--rail card--hover reveal">
+    <h3 class="card__title">白婕 · 美术设计</h3>
+    <p style="font-size:.94rem;color:var(--ink-2)">漫画、插图家，第 2 届金龙奖原创动画漫画艺术大赛动画部分最佳动画短片银奖《外婆家的向日葵》的编剧和导演，2003、2004 年度《中国动漫 CG 年鉴》顶级作者之一；曾在香港凤凰卫视深圳凤凰星影视传媒公司 40 集动画片《奥运故事》剧组担任脚本创作，任 AVG 游戏《红楼梦》系列主美，参与央视《感动世界》动画创作（前期造型设计、色指定及中期原画绘制）与央视《马兰花》前期创作（担任分镜）。</p>
+  </article>
+</div>
+<div class="callout reveal" style="margin-top:1.2rem">
+  <span class="callout__title">另外两位挂名的主创</span>
+  <p>艺术指导为孙立军，出品人为周旻；副导演张蓝、导演助理蓝柳宝、分镜团队 8 人、场景设定罗伟与李冬、制片人林丽玲 / 沈静 / 高慧芬、策划陈桂林。</p>
+</div>
+  </div>
+</section>
+<section class="section section--tint">
+  <div class="wrap">
+  <div class="section__hd reveal">
+    <span class="kicker">Credits</span>
+    <h2 class="section__title">完整制作人员表</h2>
+    <p class="section__lead">来源：百度百科“动画制作 · 制作团队”一节。</p>
+  </div>
+<div class="tbl-scroll">
+  <table class="tbl">
+    <caption>分镜、场景设定等栏目按百科原文列出，未做增删。</caption>
+    <thead><tr><th scope="col">职务</th><th scope="col">人员</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">总导演</th><td>曹小卉</td></tr>
+      <tr><th scope="row">编剧</th><td>刘可欣</td></tr>
+      <tr><th scope="row">执行导演</th><td>刘可欣</td></tr>
+      <tr><th scope="row">艺术指导</th><td>孙立军</td></tr>
+      <tr><th scope="row">副导演</th><td>张蓝</td></tr>
+      <tr><th scope="row">导演助理</th><td>蓝柳宝</td></tr>
+      <tr><th scope="row">分镜</th><td>尹川、小井、王利民、蔡海兵、陈占东、葛安、羊廷牧、路禹</td></tr>
+      <tr><th scope="row">场景设定</th><td>罗伟、李冬</td></tr>
+      <tr><th scope="row">美术设计</th><td>白婕</td></tr>
+      <tr><th scope="row">出品人</th><td>周旻</td></tr>
+      <tr><th scope="row">制片人</th><td>林丽玲、沈静、高慧芬</td></tr>
+      <tr><th scope="row">策划</th><td>陈桂林</td></tr>
+    </tbody>
+  </table>
+</div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+  <div class="section__hd reveal">
+    <span class="kicker">Studios</span>
+    <h2 class="section__title">出品与制作公司</h2>
+  </div>
+<div class="grid grid--2">
+  <article class="card reveal">
+    <h3 class="card__title">出品</h3>
+    <ul style="margin:0">
+      <li>厦门广播电视集团</li>
+      <li>厦门音像出版社</li>
+      <li>北京电影学院动画研究所</li>
+      <li>北京华映星球国际文化发展有限公司</li>
+    </ul>
+  </article>
+  <article class="card reveal">
+    <h3 class="card__title">联合制作</h3>
+    <ul style="margin:0">
+      <li>厦门卫视</li>
+      <li>厦门音像出版社</li>
+      <li>厦门广播电视产业有限公司</li>
+      <li>北京华映星球文化发展股份有限公司</li>
+      <li>北京电影学院中国动画研究院</li>
+    </ul>
+  </article>
+</div>
+<div class="callout callout--flame reveal" style="margin-top:1.2rem">
+  <span class="callout__title">注意名称的两种写法</span>
+  <p>“北京华映星球国际文化发展有限公司”与“北京华映星球文化发展股份有限公司”在不同来源中混用；该公司官网（taikongworks.com）把本片列为自制作品，署名导演与编剧均为刘可欣，形式为 2D TV 剧，规格写作“12min×52 集”。</p>
+</div>
+  </div>
+</section>
+<section class="section section--tint" id="timeline">
+  <div class="wrap">
+  <div class="section__hd reveal">
+    <span class="kicker">Timeline</span>
+    <h2 class="section__title">制作与播出时间线</h2>
+  </div>
+<ol class="timeline">
+  <li class="reveal"><span class="timeline__time">2007</span><span class="timeline__body">据制作方华映星球 2017 年的公开声明，该作品自 2007 年开始创作；剧本阶段即定下“中二少年热血故事”的基调。</span></li>
+  <li class="reveal"><span class="timeline__time">2008-11-27</span><span class="timeline__body">在首届海峡两岸（厦门）文化产业博览交易会开幕之际，《马拉松王子》于厦门市文化艺术中心举行开机仪式。北京电影学院副院长曹小卉担任总导演，刘可欣担任编剧兼执行导演。</span></li>
+  <li class="reveal"><span class="timeline__time">2008-11 ~ 2010-11</span><span class="timeline__body">曹小卉执导本片；剧本创作完成后进入制作，最初计划于 2009 年 12 月完成制作。</span></li>
+  <li class="reveal"><span class="timeline__time">2011-03-05</span><span class="timeline__body">在炫动卡通首播（哔哩哔哩番剧接口的 publish 字段同样标注为 2011-03-05）。</span></li>
+  <li class="reveal"><span class="timeline__time">2011-03-07</span><span class="timeline__body">登陆中央电视台少儿频道每晚 20:30 的《银河剧场》，并同步于厦门卫视每晚 17:35 的《动漫空间》播出。</span></li>
+  <li class="reveal"><span class="timeline__time">2011-03-14</span><span class="timeline__body">央视网少儿频道发布报道《本土动画片〈马拉松王子〉登陆央视》，介绍该片以厦门国际马拉松为背景、共 52 集，并称主人公孟飞“有望成为厦门国际马拉松的动漫形象代言人”。</span></li>
+  <li class="reveal"><span class="timeline__time">2012-04-26</span><span class="timeline__body">广电总局公布 2011 年度少儿精品及国产动画发展专项资金评审结果，《马拉松王子》获“优秀国产动画片”三等奖、奖金 15 万元，获奖单位为福建厦门音像出版有限公司。</span></li>
+  <li class="reveal"><span class="timeline__time">2016 年前后</span><span class="timeline__body">全 52 集以番剧形式上传哔哩哔哩（接口显示的发布时间为 2016-08-08 前后），成为这部片子后来重新被讨论的主要入口。</span></li>
+  <li class="reveal"><span class="timeline__time">2017-06-05</span><span class="timeline__body">面对自媒体“毒舌电影”的批评，制作方华映星球连发两篇《怒怼毒舌电影声明》，正面回应“抄袭《海贼王》”的指控。</span></li>
+  <li class="reveal"><span class="timeline__time">2020-01</span><span class="timeline__body">哔哩哔哩出现回顾视频《曾被全网指责抄袭〈海贼王〉，如今真相大白！》，把这场争议带回公众视野；同年前后该片在豆瓣的评分处于低位。</span></li>
+  <li class="reveal"><span class="timeline__time">2020-04-29</span><span class="timeline__body">仍有自媒体文章把本片列入“抄袭海贼的 4 部国漫”，争议标签继续传播。</span></li>
+  <li class="reveal"><span class="timeline__time">其后</span><span class="timeline__body">爱奇艺国际站（iq.com）上线该剧专辑页，标注“已完结、52 集”，并称支持 4K；优酷上也有用户整理的播单。</span></li>
+</ol>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+  <div class="section__hd reveal">
+    <span class="kicker">Specs</span>
+    <h2 class="section__title">制作规格</h2>
+  </div>
+<div class="tbl-scroll">
+  <table class="tbl tbl--kv">
+    <caption>制作规格一览。数据存在分歧时，本站同时保留各方口径。</caption>
+    <tbody>
+      <tr><th scope="row">形式</th><td>2D TV 系列动画（制作方官网写明 “2D animation serie”）</td></tr>
+      <tr><th scope="row">题材标签</th><td>儿童、动画、情景、体育（制作方官网口径）</td></tr>
+      <tr><th scope="row">规格</th><td>52 集，单集 12 分钟（制作方官网“12min×52 episodes”）<br><span class="card__meta" style="margin:0">与央视网“13 分钟 / 总长 676 分钟”、百度百科“11 分钟”存在出入</span></td></tr>
+      <tr><th scope="row">制作周期</th><td>2008 年 11 月开机 — 2010 年 11 月（约两年）</td></tr>
+      <tr><th scope="row">背景城市</th><td>厦门（马拉松赛道、街头、民居、学校、名胜景点及地标性建筑群）</td></tr>
+    </tbody>
+  </table>
+</div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <h2 class="footer__title">关于本站</h2>
+        <p>《马拉松王子》非官方资料站，把公开来源中关于这部 2011 年国产运动励志动画的信息汇总成册：剧情与世界观、七位主要角色、全 52 集目录、幕后制作、音乐、播出与评价，以及资料来源。</p>
+      </div>
+      <div>
+        <h2 class="footer__title">快速导航</h2>
+        <ul>
+          <li><a href="plot.html">剧情与世界观</a></li>
+          <li><a href="characters.html">七位主要角色</a></li>
+          <li><a href="episodes.html">全 52 集目录</a></li>
+          <li><a href="broadcast.html">播出与评价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">版权与制作说明</h2>
+        <p>《马拉松王子》及其角色、歌曲的著作权归原权利人所有；本站为非商业性的资料整理，引用的剧情简介与歌词来自公开百科与官方报道。站内全部插画均由程序化 SVG 现场生成，未使用任何外部图片素材。</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>资料整理截至 2026-02 · 页面生成于 <span data-year>2026</span></span>
+      <span>数据来自百度百科 / 搜狗百科 / 360 百科 / 央视网 / 华映星球官网 / 哔哩哔哩 / 爱奇艺国际站 / 电视猫</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* 《马拉松王子》资料站 — 交互脚本（无外部依赖，可直接 file:// 打开） */
+(function () {
+  "use strict";
+
+  /* --------------------------------------------------- 导航当前页高亮 */
+  function markCurrentPage() {
+    var here = location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".nav__links a").forEach(function (a) {
+      var target = a.getAttribute("href");
+      if (target === here) a.setAttribute("aria-current", "page");
+    });
+  }
+
+  /* --------------------------------------------------- 滚动进场动画 */
+  function setupReveal() {
+    var items = document.querySelectorAll(".reveal");
+    if (!items.length) return;
+    if (!("IntersectionObserver" in window)) {
+      items.forEach(function (el) {
+        el.classList.add("is-in");
+      });
+      return;
+    }
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.06 }
+    );
+    items.forEach(function (el) {
+      io.observe(el);
+    });
+  }
+
+  /* --------------------------------------------------- 分集目录：搜索 + 分段筛选 */
+  function setupEpisodeBrowser() {
+    var list = document.getElementById("epList");
+    if (!list) return;
+    var search = document.getElementById("epSearch");
+    var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-range]"));
+    var counter = document.getElementById("epCount");
+    var empty = document.getElementById("epEmpty");
+    var items = Array.prototype.slice.call(list.querySelectorAll(".ep"));
+    var total = items.length;
+    var range = "all";
+
+    function inRange(el, value) {
+      if (value === "all") return true;
+      var g = el.getAttribute("data-group");
+      return g === value;
+    }
+
+    function apply() {
+      var q = (search && search.value ? search.value : "").trim().toLowerCase();
+      var shown = 0;
+      items.forEach(function (el) {
+        var hay = (el.getAttribute("data-search") || "").toLowerCase();
+        var ok = inRange(el, range) && (!q || hay.indexOf(q) !== -1);
+        el.classList.toggle("is-hidden", !ok);
+        if (ok) shown++;
+      });
+      if (counter) {
+        counter.textContent =
+          "显示 " + shown + " / " + total + " 集" + (q ? "（关键词：" + q + "）" : "");
+      }
+      if (empty) empty.hidden = shown !== 0;
+    }
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        range = btn.getAttribute("data-range");
+        buttons.forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b === btn));
+        });
+        apply();
+      });
+    });
+
+    if (search) {
+      search.addEventListener("input", apply);
+      search.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          search.value = "";
+          apply();
+        }
+      });
+    }
+
+    // 支持 #ep-30 之类的锚点直达：自动清空筛选
+    if (location.hash && /^#ep-\d+$/.test(location.hash)) {
+      var target = document.querySelector(location.hash);
+      if (target) {
+        range = "all";
+        if (search) search.value = "";
+        buttons.forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b.getAttribute("data-range") === "all"));
+        });
+        apply();
+      }
+    }
+
+    apply();
+  }
+
+  /* --------------------------------------------------- 分集目录：键盘快捷筛选（按集号跳转） */
+  function setupEpisodeJump() {
+    var jump = document.getElementById("epJump");
+    if (!jump) return;
+    jump.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter") return;
+      var n = parseInt(jump.value, 10);
+      if (!n || n < 1 || n > 52) return;
+      var el = document.getElementById("ep-" + n);
+      if (!el) return;
+      document.querySelectorAll("[data-range]").forEach(function (b) {
+        b.setAttribute("aria-pressed", "false");
+      });
+      var all = document.querySelector('[data-range="all"]');
+      if (all) all.click();
+      el.classList.remove("is-hidden");
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.transition = "box-shadow .3s ease";
+      el.style.boxShadow = "0 0 0 4px rgba(255,122,47,.35)";
+      setTimeout(function () {
+        el.style.boxShadow = "";
+      }, 2200);
+    });
+  }
+
+  /* --------------------------------------------------- 目录高亮：回到当前区块 */
+  function setupTocHighlight() {
+    var tocLinks = document.querySelectorAll(".toc a[href^='#']");
+    if (!tocLinks.length || !("IntersectionObserver" in window)) return;
+    var map = {};
+    tocLinks.forEach(function (a) {
+      var id = a.getAttribute("href").slice(1);
+      var sec = document.getElementById(id);
+      if (sec) map[id] = a;
+    });
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          var a = map[entry.target.id];
+          if (!a) return;
+          if (entry.isIntersecting) {
+            tocLinks.forEach(function (x) {
+              x.style.borderColor = "";
+              x.style.background = "";
+            });
+            a.style.borderColor = "var(--flame-400)";
+            a.style.background = "rgba(255,201,77,.18)";
+          }
+        });
+      },
+      { rootMargin: "-30% 0px -60% 0px" }
+    );
+    Object.keys(map).forEach(function (id) {
+      io.observe(document.getElementById(id));
+    });
+  }
+
+  /* --------------------------------------------------- 页码年份 */
+  function stampYear() {
+    document.querySelectorAll("[data-year]").forEach(function (el) {
+      el.textContent = String(new Date().getFullYear());
+    });
+  }
+
+  function init() {
+    markCurrentPage();
+    setupReveal();
+    setupEpisodeBrowser();
+    setupEpisodeJump();
+    setupTocHighlight();
+    stampYear();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+
+</script>
+</body>
+</html>

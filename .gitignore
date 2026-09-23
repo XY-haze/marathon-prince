@@ -1,0 +1,20 @@
+# 压缩包（可由 node build.mjs 重新生成，不入库）
+*.zip
+
+# 开发期截图与切片页
+.shots/
+
+# 凭据（绝不入库）
+.gh-token
+.env
+*.token
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 依赖（本项目零依赖，正常情况下不会出现）
+node_modules/

@@ -1,0 +1,19 @@
+{
+  "name": "marathon-prince-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "《马拉松王子》(2011) 动画资料站 —— 零依赖静态站点生成器",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node check.mjs",
+    "serve": "node serve.mjs",
+    "dev": "node serve.mjs --port 8788",
+    "qa:slice": "node qa-slice.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["静态站点", "动画资料", "马拉松王子", "static-site"],
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" width="64" height="64" role="img" aria-label="马拉松王子标识"><defs>
+       <linearGradient id="lgFlame" x1="0" y1="1" x2="0" y2="0">
+         <stop offset="0" stop-color="#ef5f18"/><stop offset="1" stop-color="#ffc94d"/>
+       </linearGradient>
+     </defs>
+     <circle cx="32" cy="32" r="28" fill="none" stroke="#ffc94d" stroke-width="3.4" stroke-dasharray="7 6" opacity=".95"/>
+     <circle cx="32" cy="32" r="21" fill="none" stroke="#2ea3d8" stroke-width="1.6" opacity=".65"/>
+     <g transform="translate(32 45) scale(.62)">
+       <path d="M0 0 C -18 -16 -13 -34 0 -52 C 13 -34 18 -16 0 0 Z" fill="url(#lgFlame)"/>
+       <path d="M0 -6 C -9 -16 -7 -26 0 -36 C 7 -26 9 -16 0 -6 Z" fill="#fff3d0" opacity=".92"/>
+     </g></svg>
