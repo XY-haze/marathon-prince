@@ -234,8 +234,13 @@ if (DRY) {
 step(6, "推送到 GitHub");
 const remote = NO_API ? gitOut(["remote", "get-url", "origin"]) || "" : `git@github.com:${login}/${REPO}.git`;
 if (!NO_API) {
-  if (remote) git(["remote", "set-url", "origin", remote]);
+  // 已存在就改地址，不存在才 add —— 之前这里写反了条件，导致 origin 从未被设置
+  const existing = gitOut(["remote", "get-url", "origin"]);
+  if (existing) git(["remote", "set-url", "origin", remote]);
   else git(["remote", "add", "origin", remote]);
+
+  const verify = gitOut(["remote", "get-url", "origin"]);
+  if (verify !== remote) die(`origin 远程仓库设置失败（当前为“${verify || "空"}”）`);
 }
 if (!remote) die("没有配置 origin 远程仓库", "用 --repo <已存在的仓库名> 重跑，或先 git remote add origin <地址>");
 ok(`origin = ${remote}`);
