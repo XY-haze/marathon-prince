@@ -1,5 +1,9 @@
 # 《马拉松王子》资料站
 
+> ## 🌐 站点已上线
+> **<https://xy-haze.github.io/marathon-prince/>**
+> 仓库：<https://github.com/XY-haze/marathon-prince> ｜ 部署：GitHub Actions → GitHub Pages（推送到 `main` 即自动重新部署）
+
 一个专门介绍 2011 年国产运动奇幻动画《马拉松王子》（Prince Marathon）的网站：剧情与世界观、七位主要角色、全 52 集目录、幕后制作、动画音乐、播出与评价、资料来源，共 9 个页面（含 404 页）。
 
 **纯静态、零依赖、无后端**：构建产物 `dist/` 可以直接放到任何静态托管上。

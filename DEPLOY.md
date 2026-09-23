@@ -1,5 +1,13 @@
 # 让别人打开这个网站
 
+> ## ✅ 已经发布
+> - 公网地址：**<https://xy-haze.github.io/marathon-prince/>**
+> - 仓库：<https://github.com/XY-haze/marathon-prince>
+> - 部署方式：GitHub Actions（`.github/workflows/deploy-pages.yml`）→ GitHub Pages，Pages 的 Source 已设为 “GitHub Actions”
+>
+> **以后更新站点**：改完内容后 `node build.mjs && node check.mjs`，然后 `git add -A && git commit -m "更新" && git push`，Actions 会自动重新构建并部署（约 30 秒）。
+> 首次发布时踩到的坑（GCM 只能拿到凭据、`github.com` 间歇性丢包）记录在本文末尾。
+
 站点是纯静态的：**没有任何后端、数据库或运行时依赖**，`node build.mjs` 产出的 `dist/` 目录可以直接扔到任何静态托管上。下面按"要让谁看"分四种情况。
 
 ---
